@@ -1,0 +1,608 @@
+/*========================common css start======================= */
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width:1166px;
+    margin:0 auto;
+}
+/*========================common css end======================= */
+
+
+/*========================navbar start======================= */
+nav{
+    margin-top:50px;
+    position:absolute;
+    width:100%;
+}
+
+nav .flex{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+nav ul{
+    display:flex;
+    gap:100px;
+}
+
+nav ul li{
+    list-style: none;
+    /* margin-left:100px; */
+    /* font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:300; */
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:300;
+    color:#203239;
+    position:relative;
+    transition:0.4s;
+}
+
+nav ul li a:hover{
+    font-weight:600;
+}
+
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    position:absolute;
+    bottom:-8px;
+    /* top:30px; */
+    left:50%;
+    transform:translateX(-50%);
+    background-color:#F6762E;
+    border-radius: 5px;
+    transition:0.4s;
+}  
+
+nav ul li a:hover::after{
+    width:20px;
+}
+/*========================navbar end======================= */
+
+/*========================banner start======================= */
+#banner{
+    background: #EEEDDE;
+    padding-top:188px;
+    padding-bottom:120px;
+}
+#banner .main{
+    display:flex;
+    justify-content:space-between;
+}
+
+#banner .banner_left{
+    width:70%;
+    margin-top: 88px;
+}
+
+
+#banner .banner_left h1{
+    font-weight:600;
+    font-size:56px;
+    line-height:150%;
+    color:#203239;
+}
+
+#banner .banner_left p{
+    width:544px;
+    font-weight:300;
+    font-size:16px;
+    line-height: 30px;
+    color:rgb(33, 39, 41,0.5);
+    margin-top:24px;
+}
+
+#banner .banner_left input{
+    width:508px;
+    padding-top:23px;
+    padding-bottom:23px;
+    padding-left:56px;
+    border-radius:15px;
+    border:none;
+}
+
+#banner .banner_left input::placeholder{
+    font-weight:300;
+    font-size:16px;
+}
+
+#banner .banner_left .inputbox{
+    position: relative;
+    margin-top:55px;
+}
+
+#banner .banner_left .inputbox .banner_icon{
+    position: absolute;
+    top:20px;
+    left:20px;
+    font-size:24px;
+}
+
+#banner .banner_left .inputbox button{
+    border:none;
+    background: #FFFFFF;
+    padding:20px 41px;
+    border-radius:15px;
+    color:rgba(32, 50, 57,0.5);
+    font-size:16px;
+    font-weight:300;
+    margin-left: 15px;
+}
+
+#banner .banner_right{
+    width:30%;
+}
+
+/*========================banner end======================= */
+
+/*========================properti start======================= */
+#properti{
+    background: #FFFFFF;
+    padding:100px 0;
+}
+#properti h2{
+    font-size:36px;
+    font-weight:600px;
+    line-height:150%;
+    width:533px;
+    margin-bottom: 64px;
+}
+
+#properti .main{
+    display:flex;
+    justify-content:space-between ;
+}
+
+#properti .left{
+    width:250px;
+    padding:20px 33px;
+    border:1px solid transparent;
+    transition:.4s;
+}
+
+#properti .left:hover{
+    border:1px solid #EEEDDE;
+    border-radius: 10px;
+}
+
+#properti .center{
+    width:250px;
+    padding:20px 33px;
+    border:1px solid transparent;
+    transition:.4s;
+}
+
+#properti .center:hover{
+    border:1px solid #EEEDDE;
+    border-radius: 10px;
+}
+
+#properti .right{
+    width:250px;
+    padding:20px 33px;
+    border:1px solid transparent;
+    transition:.4s;
+}
+#properti .right:hover{
+    border:1px solid #EEEDDE;
+    border-radius: 10px;
+}
+#properti .title{
+    display:flex;
+    justify-content: space-between;
+}
+
+#properti .title h3{
+    font-size:16px;
+    font-weight:500;
+    color:#203239;
+    position:relative;
+}
+
+#properti .title h3::after{
+    content:'';
+    width:8px;
+    height:30px;
+    border-radius:6px;
+    background: #FF7527;
+    position: absolute;
+    top:0;
+    left:-33px;
+}
+
+#properti .title h4{
+    font-size:16px;
+    font-weight:500;
+    color:#FF7527;
+}
+
+#properti p{
+    width:235px;
+    font-size:16px;
+    font-weight:300;
+    color:rgba(32, 50, 57,0.5);
+    line-height:30px;
+    margin-top:8px;
+}
+
+#properti .left a{
+    width:235px;
+    font-size:16px;
+    font-weight:500;
+    color:#203239;
+    text-decoration: none;
+    display:inline-block;
+    margin-top:48px;
+    padding-bottom:22px;
+}
+
+#properti .center a{
+    width:235px;
+    font-size:16px;
+    font-weight:500;
+    color:#203239;
+    text-decoration: none;
+    display:inline-block;
+    margin-top:78px;
+    padding-bottom:22px;
+}
+
+#properti .right a{
+    width:235px;
+    font-size:16px;
+    font-weight:500;
+    color:#203239;
+    text-decoration: none;
+    display:inline-block;
+    margin-top:48px;
+    padding-bottom:22px;
+}
+
+#properti .arrow{
+    margin-left:8px;
+}
+/*========================properti end======================= */
+
+
+/*========================residen start====================== */
+#residen{
+    background: #EEEDDE;
+    padding-top:68px;
+    padding-bottom:150px;
+}
+
+#residen .residen_title{
+    padding-top:68px;
+    margin-bottom:64px;
+}
+
+#residen .residen_title h4{
+    font-size:16px;
+    font-weight:500;
+    color:#FF7527;
+}
+
+#residen .residen_title h2{
+    font-size:36px;
+    font-weight:600;
+    color:#203239;
+    line-height:150%;
+}
+
+#residen .residen_main{
+    display:flex;
+    justify-content:space-between;
+}
+
+#residen .residen_left{
+    width:50%;
+    position:relative;
+}
+
+#residen .residen_left .img2{
+    position:absolute;
+    top:60px;
+    left:167px;
+}
+
+
+#residen .residen_right{
+    width:50%;
+}
+
+#residen .residen_right h2{
+    font-size:36px;
+    font-weight:600;
+    color:#203239;
+    line-height:150%;
+    width:507px;
+}
+
+#residen .residen_right p{
+    font-size:16px;
+    font-weight:300;
+    color:#203239;
+    line-height:30px;
+    width:570px;
+    margin-top:24px;   
+}
+
+#residen .residen_right .btn{
+    margin-top:48px;
+    position:relative;
+}
+#residen .residen_right .btn button{
+    width:234px;
+    height:50px;
+    border:1px solid #203239;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    color:#FFFFFF;
+    background: #203239; 
+    transition:.4s;
+}
+
+#residen .residen_right .btn button:hover{
+    background: #EEEDDE;
+    color:#203239;
+}
+
+#residen .residen_right .btn .btn2{
+    margin-left:48px;
+}
+
+#residen .residen_right .btn .residen_icon{
+    position:absolute;
+    left: 26px;
+    top: 15px;
+    font-size: 20px;
+}
+/*========================residen end====================== */
+
+
+
+/*========================residen kota start====================== */
+#residen_kota{
+    background: #FFFFFF;
+    padding-top:68px;
+    padding-bottom:200px;
+}
+
+
+#residen_kota .container h4{
+    color:#FF7527;
+    font-size: 16px;
+    font-weight:500;
+    margin-top:68px;
+}
+
+#residen_kota .container h2{
+    color:#203239;
+    font-size: 36px;
+    font-weight:600;
+    line-height:150%;
+    margin-bottom: 64px;
+}
+
+#residen_kota .kota_main{
+    display:flex;
+    justify-content:space-between;
+}
+#residen_kota .kota_left{
+    width:373px;
+    height:454px;
+    margin-right: 24px;
+}
+#residen_kota .kota_left h2{
+    font-weight:500;
+    font-size:24px;
+    line-height:150%;
+    color:#203239;
+    margin-bottom:8px;
+}
+#residen_kota .kota_left p{
+    width:310px;
+    font-weight:300;
+    font-size:16px;
+    line-height:30px;
+    color:#203239;
+    padding-bottom:68px;
+
+}
+#residen_kota .kota_center{
+    width:372px;
+    height:454px;
+    margin-right: 24px;
+    border:1px solid white;
+}
+#residen_kota .kota_center h2{
+    font-weight:500;
+    font-size:24px;
+    line-height:150%;
+    color:#203239;
+    margin-bottom:8px;
+}
+#residen_kota .kota_center p{
+    width:356px;
+    font-weight:300;
+    font-size:16px;
+    line-height:30px;
+    color:#203239;
+    padding-bottom:68px;
+}
+
+
+#residen_kota .kota_right{
+    width:374px;
+    height:454px;
+}
+#residen_kota .kota_right h2{
+    font-weight:500;
+    font-size:24px;
+    line-height:150%;
+    color:#203239;
+    margin-bottom:8px;
+}
+#residen_kota .kota_right p{
+    width:310px;
+    font-weight:300;
+    font-size:16px;
+    line-height:30px;
+    color:#203239;
+    padding-bottom:68px;
+
+}
+
+/*========================residen kota end====================== */
+
+
+/*========================hubungi kami start====================== */
+#hubungi{
+    background: #EEEDDE;
+    padding:48px 0;
+}
+
+#hubungi h2{
+    font-size:36px;
+    font-weight:600;
+    line-height: 150%;
+    color:#203239;
+}
+
+#hubungi .kami_main{
+    display:flex;
+    justify-content:space-between;
+}
+
+#hubungi .kami_main .kami_left{
+    display:flex;
+    justify-content:space-between;
+    width:70%;
+    padding-top:75px;
+    position:relative;
+}
+
+#hubungi .kami_main .kami_left .kami_left1{
+    width:274px;
+    height:167px;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+#hubungi .kami_main .kami_left .kami_left2{
+    width:274px;
+    height:167px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    position:absolute;
+    left: 310px;
+    top: 75px;
+}
+
+
+#hubungi .kami_main .kami_left h4{
+    margin-left:104px;
+    margin-top:25px;
+    font-size:16px;
+    font-weight:500;
+    color:#203239;
+}
+
+#hubungi .kami_main .kami_left h5{
+    margin-left:98px;
+    margin-top:8px;
+    font-size:16px;
+    font-weight:400;
+    color:#203239;
+}
+
+#hubungi .kami_main .kami_left button{
+    margin-left:82px;
+    margin-top:27px;
+    margin-bottom:15px;
+    width:109px;
+    height:44px;
+    border-radius:5px;
+    border:none;
+    background: #203239;
+    color:#FFFFFF;
+    font-size:16px;
+    font-weight:600;
+}
+
+#hubungi .kami_main .kami_left .kami_icon1{
+    position: absolute;
+    left: 61px;
+    top: 113px;
+    font-size: 25px;
+}
+
+
+#hubungi .kami_main .kami_left .kami_icon2{
+    position:absolute;
+    left: 61px;
+    top: 42px;
+    font-size: 25px;
+}
+
+
+#hubungi .kami_main .kami_right{
+    width:30%;
+    position:relative;
+}
+
+#hubungi .kami_main .kami_right h2{
+    font-size:36px;
+    font-weight:600;
+    line-height:150%;
+    color:#203239;
+    padding-bottom:69px;
+}
+
+
+#hubungi .kami_main .kami_right img{
+    width:156px;
+    height:104px;
+    position:absolute;
+    left:50px;
+}
+/*========================hubungi kami end====================== */
+
+
+
+/*========================footer start====================== */
+#footer{
+    background: #203239;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+#footer .footer_main{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+#footer .footer_right i{
+    margin-left:61px;
+    color:#FFFFFF;
+    font-size:20px;
+}
+
+/*========================footer end====================== */
